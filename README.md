@@ -111,6 +111,13 @@ This project is written in C#
 
 Use Visual Studio 2019 and above. NET Framework 4.8 SDK is required
 
+# Contributing
+
+Contributions are welcome! Please ensure you:
+- Submit pull requests with clear, detailed descriptions.
+- Open an issue to discuss significant changes before implementing them.
+- Do not submit pull requests for bypass or protection features.
+
 # Credits
 - AndnixSH
 - INF1NUM (Original author of [APKToolGUI](https://github.com/INF1NUM/APKToolGUI))
