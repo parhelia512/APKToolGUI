@@ -166,8 +166,6 @@
             this.schemev1ComboBox = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.selectKeyStoreFileBtn = new System.Windows.Forms.Button();
             this.aliasTxtBox = new System.Windows.Forms.TextBox();
             this.useAliasChkBox = new System.Windows.Forms.CheckBox();
@@ -269,6 +267,8 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.tabControlMain.SuspendLayout();
             this.tabPageMain.SuspendLayout();
             this.mergePanel.SuspendLayout();
@@ -1281,6 +1281,8 @@
             // 
             // groupBox_SIGN_Options
             // 
+            this.groupBox_SIGN_Options.Controls.Add(this.label23);
+            this.groupBox_SIGN_Options.Controls.Add(this.textBox4);
             this.groupBox_SIGN_Options.Controls.Add(this.checkBox2);
             this.groupBox_SIGN_Options.Controls.Add(this.checkBox1);
             this.groupBox_SIGN_Options.Controls.Add(this.autoDelIdsigChkBox);
@@ -1293,8 +1295,6 @@
             this.groupBox_SIGN_Options.Controls.Add(this.schemev1ComboBox);
             this.groupBox_SIGN_Options.Controls.Add(this.label24);
             this.groupBox_SIGN_Options.Controls.Add(this.textBox3);
-            this.groupBox_SIGN_Options.Controls.Add(this.label23);
-            this.groupBox_SIGN_Options.Controls.Add(this.textBox4);
             this.groupBox_SIGN_Options.Controls.Add(this.selectKeyStoreFileBtn);
             this.groupBox_SIGN_Options.Controls.Add(this.aliasTxtBox);
             this.groupBox_SIGN_Options.Controls.Add(this.useAliasChkBox);
@@ -1412,19 +1412,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Text = global::APKToolGUI.Properties.Settings.Default.Sign_KeystorePassword;
             this.textBox3.UseSystemPasswordChar = true;
-            // 
-            // label23
-            // 
-            resources.ApplyResources(this.label23, "label23");
-            this.label23.Name = "label23";
-            // 
-            // textBox4
-            // 
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::APKToolGUI.Properties.Settings.Default, "Sign_KeyPassword", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Text = global::APKToolGUI.Properties.Settings.Default.Sign_KeyPassword;
-            this.textBox4.UseSystemPasswordChar = true;
             // 
             // selectKeyStoreFileBtn
             // 
@@ -2173,6 +2160,19 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.logTxtBox);
             // 
+            // label23
+            // 
+            resources.ApplyResources(this.label23, "label23");
+            this.label23.Name = "label23";
+            // 
+            // textBox4
+            // 
+            resources.ApplyResources(this.textBox4, "textBox4");
+            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::APKToolGUI.Properties.Settings.Default, "Sign_KeyPassword", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Text = global::APKToolGUI.Properties.Settings.Default.Sign_KeyPassword;
+            this.textBox4.UseSystemPasswordChar = true;
+            // 
             // FormMain
             // 
             this.AllowDrop = true;
@@ -2383,8 +2383,6 @@
         internal System.Windows.Forms.Label label20;
         internal System.Windows.Forms.CheckBox useKeyStoreChkBox;
         internal System.Windows.Forms.TextBox textBox3;
-        internal System.Windows.Forms.Label label23;
-        internal System.Windows.Forms.TextBox textBox4;
         internal System.Windows.Forms.Button selectKeyStoreFileBtn;
         internal System.Windows.Forms.TextBox aliasTxtBox;
         internal System.Windows.Forms.CheckBox useAliasChkBox;
@@ -2487,6 +2485,8 @@
         internal System.Windows.Forms.NumericUpDown comJobsLvlUpDown;
         internal System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.SplitContainer splitContainer1;
+        internal System.Windows.Forms.Label label23;
+        internal System.Windows.Forms.TextBox textBox4;
     }
 }
 
