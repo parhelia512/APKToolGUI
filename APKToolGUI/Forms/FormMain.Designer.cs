@@ -267,6 +267,8 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.tabControlMain.SuspendLayout();
             this.tabPageMain.SuspendLayout();
             this.mergePanel.SuspendLayout();
@@ -1279,6 +1281,8 @@
             // 
             // groupBox_SIGN_Options
             // 
+            this.groupBox_SIGN_Options.Controls.Add(this.label23);
+            this.groupBox_SIGN_Options.Controls.Add(this.textBox4);
             this.groupBox_SIGN_Options.Controls.Add(this.checkBox2);
             this.groupBox_SIGN_Options.Controls.Add(this.checkBox1);
             this.groupBox_SIGN_Options.Controls.Add(this.autoDelIdsigChkBox);
@@ -2156,6 +2160,19 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.logTxtBox);
             // 
+            // label23
+            // 
+            resources.ApplyResources(this.label23, "label23");
+            this.label23.Name = "label23";
+            // 
+            // textBox4
+            // 
+            resources.ApplyResources(this.textBox4, "textBox4");
+            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::APKToolGUI.Properties.Settings.Default, "Sign_KeyPassword", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Text = global::APKToolGUI.Properties.Settings.Default.Sign_KeyPassword;
+            this.textBox4.UseSystemPasswordChar = true;
+            // 
             // FormMain
             // 
             this.AllowDrop = true;
@@ -2468,6 +2485,8 @@
         internal System.Windows.Forms.NumericUpDown comJobsLvlUpDown;
         internal System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.SplitContainer splitContainer1;
+        internal System.Windows.Forms.Label label23;
+        internal System.Windows.Forms.TextBox textBox4;
     }
 }
 
