@@ -1,3 +1,10 @@
+3.3.2.3
+- Updated Apktool to 3.0.2
+- Add separate key password field for APK signing
+- Updated Russian localization
+- Correct signing/build option handling and drag-drop stability
+- Support Apktool 3.0.x flags
+
 3.3.2.2
 - Updated APKEditor to 1.4.7
 - Updated Apktool to 3.0.1
